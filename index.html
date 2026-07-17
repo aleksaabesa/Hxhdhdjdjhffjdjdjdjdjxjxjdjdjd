@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სიზმრების გენერატორი</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ᲪᲘᲤᲠᲣᲪᲘ ᲡᲘᲖᲛᲠᲔᲑᲘ</h1>
+        <p>აღწერე შენი სიზმარი და ხელოვნური ინტელექტი მას 10-15 წამიან ვიდეოდ აქცევს.</p>
+        
+        <div class="input-area">
+            <textarea id="dreamInput" placeholder="დაწერე აქ რა დაგესიზმრა... (მაგ: დავფრინავდი ნეონის ქალაქში ვარდისფერი ღრუბლებით)"></textarea>
+            <button id="generateBtn">ვიდეოს დაგენერირება</button>
+        </div>
+
+        <div class="result-area">
+            <div id="loading" class="hidden">
+                <div class="spinner"></div>
+                <p>AI ამუშავებს შენს სიზმარს, გთხოვთ დაელოდოთ...</p>
+            </div>
+            
+            <div id="videoContainer" class="hidden">
+                <h2>შენი სიზმარი გაცოცხლდა:</h2>
+                <video id="dreamVideo" controls>
+                    <source src="" type="video/mp4">
+                    შენს ბრაუზერს არ აქვს ვიდეოს მხარდაჭერა.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
